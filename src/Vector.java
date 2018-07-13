@@ -1,5 +1,4 @@
 
-
 public class Vector {
 	
 	float x;

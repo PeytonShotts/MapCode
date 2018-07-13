@@ -1,3 +1,4 @@
+
 import java.io.IOException;
 
 public class Main {
@@ -5,17 +6,14 @@ public class Main {
 	public static void main(String[] args) throws IOException {
 		
 		
-		Map jsonMap = JsonConverter.convert("C:/Users/Peyton/Desktop/jsonmap.json");
-		System.out.println(jsonMap.width);
-		System.out.println(jsonMap.height);
+		Map newMap = JsonConverter.convert("C:/Users/p05119/Desktop/newfolder2/jsonmap.json");
+		System.out.println(newMap.width);
+		System.out.println(newMap.height);
 		
-		int x = 42; int y = 41;
+		int x = 40; int y = 42;
 		
-		System.out.println(jsonMap.layers[0].data[(100*y) + x]);
+		System.out.println(newMap.layers[0].data[40][42]);
 		
-		byte[] testArray = ByteArrayConverter.convert(jsonMap);
-		
-		System.out.println(testArray[5]);
 		
 	}
 
